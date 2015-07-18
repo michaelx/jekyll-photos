@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% assign i = 0 %}
+
+<h1>Photo Sets</h1>
+<ul>
+  {% for page in site.pages %}
+    {% if page.layout == "photo_set" %}
+      {% assign i = i | plus:1 %}
+      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
