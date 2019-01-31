@@ -4,10 +4,9 @@ Dead simple solution to add a photo gallery to a Jekyll site.
 
 It’s pretty easy to extend Jekyll with a small dose of creativity. Thanks to the template language Liquid, the only thing you often need, is just a new layout file. And well, that’s what we use here as the base:
 
-* `/_layouts/photos.html`: The layout for the overview page, displaying all photo sets.
 * `/_layouts/photo_set.html`: The layout for each photo set, displaying every photo of a photo set.
-* `photos.md`: The overview page that uses the *photos* layout.
-* `berlin.md`: An example photo set (uses the *photo_set* layout).
+* `photos.html`: The overview page, displaying all photo sets.
+* `berlin.md`: An example photo set.
 * `/images/photos/`: The directory for all photos. You can change that in `/_layouts/photo_set.html` if you like.
 
 ## Demo
